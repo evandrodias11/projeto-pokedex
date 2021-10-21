@@ -57,8 +57,32 @@ class Pokemon extends React.Component {
             if (type === "Bug") {
               return (
                 <img
-                  alt="icon water"
-                  src="https://img.icons8.com/office/16/000000/bug.png"
+                  alt="icon bug"
+                  src="https://img.icons8.com/office/25/000000/bug.png"
+                />
+              );
+            }
+            if (type === "Flying") {
+              return (
+                <img
+                  alt="icon flying"
+                  src="https://img.icons8.com/emoji/25/000000/bird-emoji.png"
+                />
+              );
+            }
+            if (type === "Poison") {
+              return (
+                <img
+                  alt="icon poison"
+                  src="https://img.icons8.com/office/25/000000/poison-bottle.png"
+                />
+              );
+            }
+            if (type === "Electric") {
+              return (
+                <img
+                  alt="icon electric"
+                  src="https://img.icons8.com/fluency/25/000000/conflict.png"
                 />
               );
             }

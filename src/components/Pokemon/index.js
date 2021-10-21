@@ -1,0 +1,83 @@
+/* eslint-disable array-callback-return */
+import React from "react";
+import PropTypes from "prop-types";
+import { handleGenerateBg } from "../../utils";
+
+class Pokemon extends React.Component {
+  render() {
+    const typePokemon = handleGenerateBg(this.props.types[0]);
+
+    return (
+      <div
+        className="pokemon"
+        style={{ background: typePokemon, borderColor: typePokemon }}
+      >
+        <h2>{this.props.name}</h2>
+
+        <img
+          className="pokemon-image"
+          src={
+            this.props.photo ||
+            "https://www.purarteadesivos.com.br/wp-content/uploads/2017/04/adesivo-personalizado-pokebola-pokemon-recorte-eletronico-geek-nerd-gamer-pura-arte-adesivos.png"
+          }
+          alt={`pokemon ${this.props.name}`}
+        />
+        <ul className="pokemon-info">
+          <li>HP: {this.props.hp}</li>
+          <li>Attack: {this.props.attack}</li>
+          <li>Defense: {this.props.defense}</li>
+        </ul>
+
+        <div>
+          {this.props.types.map((type) => {
+            if (type === "Grass") {
+              return (
+                <img
+                  alt="icon grass"
+                  src="https://img.icons8.com/office/25/000000/grass.png"
+                />
+              );
+            }
+            if (type === "Fire") {
+              return (
+                <img
+                  alt="icon fire"
+                  src="https://img.icons8.com/emoji/25/000000/fire.png"
+                />
+              );
+            }
+            if (type === "Water") {
+              return (
+                <img
+                  alt="icon water"
+                  src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/25/000000/external-water-nature-resource-vitaliy-gorbachev-flat-vitaly-gorbachev.png"
+                />
+              );
+            }
+            if (type === "Bug") {
+              return (
+                <img
+                  alt="icon water"
+                  src="https://img.icons8.com/office/16/000000/bug.png"
+                />
+              );
+            }
+          })}
+        </div>
+
+        <div>{this.props.types.join(" / ")}</div>
+      </div>
+    );
+  }
+}
+
+Pokemon.propTypes = {
+  name: PropTypes.string.isRequired,
+  hp: PropTypes.number,
+  attack: PropTypes.number.isRequired,
+  defense: PropTypes.number.isRequired,
+  photo: PropTypes.string.isRequired,
+  types: PropTypes.arrayOf(PropTypes.string),
+};
+
+export default Pokemon;

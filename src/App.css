@@ -1,4 +1,6 @@
 .title {
+  margin-top: 10px;
+
   font-size: 24px;
   color: #323b45;
   text-align: center;
@@ -44,4 +46,16 @@
 
 .pokemon-info {
   list-style: none;
+}
+
+input {
+  border: 0.1px solid;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+::placeholder {
+  opacity: 0.4;
 }

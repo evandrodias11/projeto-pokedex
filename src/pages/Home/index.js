@@ -41,12 +41,16 @@ class Home extends React.Component {
         <Header title="Pokedex" />
 
         {!this.state.showButton && !this.state.loading && (
-          <input type="text" onChange={this.handleChange} />
+          <input
+            type="text"
+            onChange={this.handleChange}
+            placeholder="Pesquisar Pokemon..."
+          />
         )}
 
         <div className="container-pokemons">
           {this.state.showButton && (
-            <button onClick={this.getData}>Get DATA</button>
+            <button onClick={this.getData}>Revelar Pokedex</button>
           )}
 
           {this.state.loading && "Loading..."}

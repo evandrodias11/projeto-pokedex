@@ -53,7 +53,7 @@ class Home extends React.Component {
             <button onClick={this.getData}>Revelar Pokedex</button>
           )}
 
-          {this.state.loading && "Loading..."}
+          {this.state.loading && "Carregando Lista..."}
           {!this.state.loading &&
             this.state.pokemons.map((item) => (
               <Pokemon

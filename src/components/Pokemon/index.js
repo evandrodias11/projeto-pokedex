@@ -23,9 +23,30 @@ class Pokemon extends React.Component {
           alt={`pokemon ${this.props.name}`}
         />
         <ul className="pokemon-info">
-          <li>HP: {this.props.hp}</li>
-          <li>Attack: {this.props.attack}</li>
-          <li>Defense: {this.props.defense}</li>
+          <li>
+            <img
+              alt="icon hp"
+              src="https://img.icons8.com/color/15/000000/doctors-bag.png"
+            />
+            {"   "}
+            {this.props.hp}
+          </li>
+          <li>
+            <img
+              alt="icon attack"
+              src="https://img.icons8.com/color/15/000000/sword.png"
+            />
+            {"   "}
+            {this.props.attack}
+          </li>
+          <li>
+            <img
+              alt="icon defense"
+              src="https://img.icons8.com/color/15/000000/shield.png"
+            />
+            {"   "}
+            {this.props.defense}
+          </li>
         </ul>
 
         <div>
@@ -83,6 +104,86 @@ class Pokemon extends React.Component {
                 <img
                   alt="icon electric"
                   src="https://img.icons8.com/fluency/25/000000/conflict.png"
+                />
+              );
+            }
+            if (type === "Ground") {
+              return (
+                <img
+                  alt="icon ground"
+                  src="https://img.icons8.com/color/25/000000/ground.png"
+                />
+              );
+            }
+            if (type === "Normal") {
+              return (
+                <img
+                  alt="icon normal"
+                  src="https://img.icons8.com/color/25/000000/pokeball--v1.png"
+                />
+              );
+            }
+            if (type === "Fairy") {
+              return (
+                <img
+                  alt="icon fairy"
+                  src="https://img.icons8.com/color/25/000000/wizard.png"
+                />
+              );
+            }
+            if (type === "Fighting") {
+              return (
+                <img
+                  alt="icon figthing"
+                  src="https://img.icons8.com/color/25/000000/boxing.png"
+                />
+              );
+            }
+            if (type === "Psychic") {
+              return (
+                <img
+                  alt="icon psychic"
+                  src="https://img.icons8.com/color/25/000000/crystal-ball.png"
+                />
+              );
+            }
+            if (type === "Steel") {
+              return (
+                <img
+                  alt="icon steel"
+                  src="https://img.icons8.com/color/25/000000/steel-bars.png"
+                />
+              );
+            }
+            if (type === "Ice") {
+              return (
+                <img
+                  alt="icon steel"
+                  src="https://img.icons8.com/color/25/000000/cooling.png"
+                />
+              );
+            }
+            if (type === "Rock") {
+              return (
+                <img
+                  alt="icon rock"
+                  src="https://img.icons8.com/color/25/000000/rock.png"
+                />
+              );
+            }
+            if (type === "Dragon") {
+              return (
+                <img
+                  alt="icon dragon"
+                  src="https://img.icons8.com/color/25/000000/the-dragon-team.png"
+                />
+              );
+            }
+            if (type === "Ghost") {
+              return (
+                <img
+                  alt="icon ghost"
+                  src="https://img.icons8.com/color/25/000000/ghost--v1.png"
                 />
               );
             }

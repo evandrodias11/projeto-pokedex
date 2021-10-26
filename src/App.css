@@ -50,6 +50,7 @@
 
 input {
   border: 0.1px solid;
+  border-radius: 10px;
   display: flex;
   margin: 0 auto;
   margin-top: 15px;

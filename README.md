@@ -1,6 +1,6 @@
 Primeiro projeto realizado com ReactJS no curso #DevInHouse
 
-<img width="20px" heigth="20px" src="https://miro.medium.com/max/500/0*TwqQJI0YFBZEzjcV.png"></img> Disponível <a href="https://pokedex-react-devinhouse.netlify.app/" target="_blank">aqui</a>
+<img width="20px" heigth="20px" src="https://miro.medium.com/max/500/0*TwqQJI0YFBZEzjcV.png"></img> Disponível <a href="https://pokedex-react-devinhouse.netlify.app/" target="_blank" rel="noopener">aqui</a>
 
 
 ![print](https://user-images.githubusercontent.com/65000871/139600795-624c7a24-8d6d-45e6-9e70-1b8cdad2ad8b.png)
